@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 import './SearchBox.css';
 
-const SearchBox = () => {
+const SearchBox = props => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [pokemonData, setPokemonData] = useState(null);
 
   const onInputChange = event => {
     setSearchTerm(event.target.value);
@@ -13,10 +11,10 @@ const SearchBox = () => {
 
   const onSearch = event => {
     event.preventDefault();
-    axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
-      .then(res => console.log(res.data))
-      .catch(err => console.log(err));
-    setSearchTerm('');
+    if (searchTerm !== '') {
+      props.onSearch(searchTerm.toLowerCase());
+      setSearchTerm('');
+    }
   }
 
   return (

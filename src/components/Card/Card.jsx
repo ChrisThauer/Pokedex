@@ -3,11 +3,14 @@ import React from 'react';
 import SearchBox from '../SearchBox/SearchBox';
 
 import './Card.css';
+import DisplayBox from '../DisplayBox/DisplayBox';
 
-const Card = () => {
+const Card = ({ onSearch, data }) => {
+
   return (
     <div className="card">
-      <SearchBox />
+      <SearchBox onSearch={onSearch}/>
+      <DisplayBox data={data} />
     </div>
   )
 }

@@ -1,0 +1,29 @@
+.display-box {
+    width: 80%;
+    height: 30%;
+    border: 2px solid #ec2811;
+    margin: 0 auto;
+    background-color: #d9d9d9;
+    padding: 5px;
+}
+
+.display-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+.img-container {
+    width: 80%;
+    height: 75%;
+    margin: auto;
+}
+
+.pokemon-img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}

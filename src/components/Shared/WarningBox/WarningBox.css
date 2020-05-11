@@ -1,0 +1,11 @@
+.warning-box {
+    min-width: 350px;
+    width: 30%;
+    font-size: 1.2rem;
+    background-color: #fffe00;
+    margin: 15px auto 0;
+    padding: 2px 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}

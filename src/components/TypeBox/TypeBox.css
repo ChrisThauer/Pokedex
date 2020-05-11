@@ -1,0 +1,85 @@
+.type-box {
+    display: inline;
+    color: #FFFFFF;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin: 6px;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* POKEMON TYPE COLORS */
+
+.normal {
+    background-color: #9fa7a0;
+}
+
+.grass {
+    background-color: #32c12e;
+}
+
+.fire {
+    background-color: #ff4747;
+}
+
+.water {
+    background-color: #30b2ff;
+}
+
+.fighting {
+    background-color: #854b00;
+}
+
+.flying {
+    background-color: #91b6ff;
+}
+
+.poison {
+    background-color: #bd7aff;
+}
+
+.ground {
+    background-color: #ffd970;
+}
+
+.rock {
+    background-color: #bea471;
+}
+
+.bug {
+    background-color: #e7ff4b;
+    color: black;
+}
+
+.ghost {
+    background-color: #7942ff;
+}
+
+.electric {
+    background-color: #fffc33;
+    color: black;
+}
+
+.psychic {
+    background-color: #f67aff;
+}
+
+.ice {
+    background-color: #81faff;
+    color: black;
+}
+
+.dragon {
+    background-color: #9c5eff;
+}
+
+.dark {
+    background-color: #6b5135;
+}
+
+.steel {
+    background-color: #a4a4a4;
+}
+
+.fairy {
+    background-color: #ffa2f0;
+}
