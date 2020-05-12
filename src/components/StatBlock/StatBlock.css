@@ -1,0 +1,10 @@
+.stat-block {
+    border: 2px solid #ec2811;
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}

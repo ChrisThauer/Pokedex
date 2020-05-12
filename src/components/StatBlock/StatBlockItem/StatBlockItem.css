@@ -1,0 +1,9 @@
+.stat-block-item {
+    width: 100%;
+    height: 16%;
+}
+
+.stat-bar {
+    background-color: #ec2811;
+    height: 50%;
+}

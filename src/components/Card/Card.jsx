@@ -1,16 +1,18 @@
 import React from 'react';
 
 import SearchBox from '../SearchBox/SearchBox';
+import DisplayBox from '../DisplayBox/DisplayBox';
+import StatBlock from '../StatBlock/StatBlock';
 
 import './Card.css';
-import DisplayBox from '../DisplayBox/DisplayBox';
 
 const Card = ({ onSearch, data }) => {
 
   return (
     <div className="card">
       <SearchBox onSearch={onSearch}/>
-      <DisplayBox data={data} />
+      <DisplayBox data={data}/>
+      {data && <StatBlock stats={data.stats}/>}
     </div>
   )
 }
