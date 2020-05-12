@@ -18,14 +18,15 @@ const App = () => {
         console.log(res.data)
       })
       .catch(err => {
-        setHasError(true);
         console.log(err);
+        setHasError(true);
+        setTimeout(() => setHasError(false), 5000);
       });
   }
 
   return (
     <div className="app">
-      {hasError ? <WarningBox message="No Pokemon found!" /> : null}
+      {hasError && <WarningBox message="No Pokemon found!" />}
       <Card onSearch={onSearch} data={pokemonData} />
     </div>
   );
